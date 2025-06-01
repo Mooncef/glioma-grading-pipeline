@@ -2,9 +2,6 @@
 
 **Classifying Brain Tumor Types (LGG vs GBM) using Clinical and Mutation Data from TCGA.**
 
-> A real-world ML pipeline from data preprocessing to model explainability – with clinical impact.
-
-
 ## Project Overview
 
 This project tackles a **high-stakes healthcare problem**: grading gliomas (brain tumors) as either  
@@ -14,7 +11,6 @@ This project tackles a **high-stakes healthcare problem**: grading gliomas (brai
 - **Genetic markers**: 20 most frequently mutated genes
 
 The goal is to design an **accurate and cost-efficient classifier** by identifying the **optimal subset of features** to support diagnosis and reduce unnecessary testing costs.
-
 
 ## What I Did
 
@@ -37,7 +33,6 @@ The goal is to design an **accurate and cost-efficient classifier** by identifyi
 - Final predictions on new test data (`test.xlsx`)
 - Complete code in reproducible Jupyter Notebook
 
-
 ## Files
 
 | Filename                         | Description                                           |
@@ -46,7 +41,6 @@ The goal is to design an **accurate and cost-efficient classifier** by identifyi
 | `TCGA_GBM_LGG_Mutations_all.csv`| Training data from TCGA (UCI ML Repo)                |
 | `test.xlsx`                      | Blind test dataset to predict and evaluate           |
 | `instructions.pdf`              | Full task description and evaluation criteria        |
-
 
 ## Author
 

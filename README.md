@@ -1,51 +1,71 @@
-# Glioma Grading with Clinical and Genomic Features
+# 🧬 Glioma Grading – ML & Deep Learning Pipeline
 
-**Classifying Brain Tumor Types (LGG vs GBM) using Clinical and Mutation Data from TCGA.**
+**Brain Tumor Classification (LGG vs GBM) using Clinical & Genetic Features with Machine Learning and Artificial Neural Networks.**
 
-## Project Overview
+---
 
-This project tackles a **high-stakes healthcare problem**: grading gliomas (brain tumors) as either  
-**Lower Grade Glioma (LGG)** or **Glioblastoma Multiforme (GBM)** using:
+## Objective
 
-- **Clinical features**: Gender, Age at diagnosis, Race  
-- **Genetic markers**: 20 most frequently mutated genes
+Design an AI system to classify brain tumors (Glioma) into:
+- **LGG**: Lower Grade Glioma
+- **GBM**: Glioblastoma Multiforme
 
-The goal is to design an **accurate and cost-efficient classifier** by identifying the **optimal subset of features** to support diagnosis and reduce unnecessary testing costs.
+Based on:
+- **Clinical data**: Gender, Age, Race
+- **Genetic mutations**: Top 20 most mutated genes from TCGA
 
-## What I Did
+## What This Project Covers
 
-**End-to-end ML workflow**:
-- **Data understanding**: distribution analysis, missing values, feature types
-- **Preprocessing pipeline**: imputation, encoding, scaling
-- **Train/test split**: 80/20 + stratification
+### `glioma_grading1.ipynb`
+Machine Learning Approach:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
 
-**Modeling & Evaluation**:
-- Baseline: Logistic Regression, Decision Tree  
-- Advanced: Random Forest, Support Vector Machine (SVM)  
-- **Hyperparameter tuning**: GridSearchCV on 10-fold cross-validation
-- **Model evaluation**: Accuracy, Precision, Recall, F1 Score, ROC/AUC, PR Curves
+Preprocessing:
+- Missing data handling
+- Feature encoding
+- Scaling
 
-**Explainability**:
-- Feature importance analysis from decision tree & random forest
-- Visual diagnostics (ROC, Precision-Recall, confusion matrices)
+Modeling:
+- 80/20 train-test split
+- GridSearchCV
+- ROC, Precision-Recall, Confusion Matrix
+- Feature importance from tree-based models
 
-**Deliverables**:
-- Final predictions on new test data (`test.xlsx`)
-- Complete code in reproducible Jupyter Notebook
+### `glioma_grading2.ipynb`
+Deep Learning Approach:
+- ANN using **Keras Sequential model**
+- Multiple Dense layers with ReLU and Softmax
+- Categorical encoding and data normalization
+- Evaluation with accuracy & loss curves
+- Comparison with classical ML models
 
-## Files
+## Skills Demonstrated
 
-| Filename                         | Description                                           |
-|----------------------------------|-------------------------------------------------------|
-| `HW1.ipynb`                      | Main notebook – full pipeline & analysis             |
-| `TCGA_GBM_LGG_Mutations_all.csv`| Training data from TCGA (UCI ML Repo)                |
-| `test.xlsx`                      | Blind test dataset to predict and evaluate           |
-| `instructions.pdf`              | Full task description and evaluation criteria        |
+| Domain             | Tools / Concepts                                    |
+|--------------------|-----------------------------------------------------|
+| **Machine Learning** | Scikit-learn, GridSearchCV, Decision Trees, SVM    |
+| **Deep Learning**    | TensorFlow / Keras, ANN, Dense layers              |
+| **Preprocessing**    | Pandas, encoding, scaling, feature selection       |
+| **Model Evaluation** | Accuracy, F1-score, ROC, PR Curves, Visualizations |
 
-## Author
+## Files Included
+
+| File                  | Description                                         |
+|-----------------------|-----------------------------------------------------|
+| `glioma_grading1.ipynb`   | Classical ML models for glioma classification       |
+| `glioma_grading2.ipynb`     | Deep Learning approach using ANN (Keras)            |
+| `TCGA_GBM_LGG_Mutations_all.csv` | Training dataset from TCGA (UCI source)        |
+| `test.xlsx`           | Test dataset to evaluate final predictions          |
+| `instructions.pdf`    | Problem description and task details                |
+
+---
+
+## 🧑‍💻 Author
 
 **Moncef Berkoun**  
-🎓 UTBM | MSc in AI Engineering & Tech Entrepreneurship
+🎓 MSc Artificial Intelligence & Technological Innovation – UTBM  
 🔗 [LinkedIn](https://www.linkedin.com/in/moncef-berkoun/)  
 📧 moncef.berkoun@gmail.com  
-

@@ -42,15 +42,6 @@ Deep Learning Approach:
 - Evaluation with accuracy & loss curves
 - Comparison with classical ML models
 
-## Skills Demonstrated
-
-| Domain             | Tools / Concepts                                    |
-|--------------------|-----------------------------------------------------|
-| **Machine Learning** | Scikit-learn, GridSearchCV, Decision Trees, SVM    |
-| **Deep Learning**    | TensorFlow / Keras, ANN, Dense layers              |
-| **Preprocessing**    | Pandas, encoding, scaling, feature selection       |
-| **Model Evaluation** | Accuracy, F1-score, ROC, PR Curves, Visualizations |
-
 ## Files Included
 
 | File                  | Description                                         |
